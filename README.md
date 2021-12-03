@@ -18,4 +18,3 @@ python client.py
 - Run the server script on a terminal, and run client scripts on different terminals and enter your username to connect it
  to the server and you can chat.
  - Inorder to be the admin you have to enter the password which can be set inside the`server.py` file. The default admin password is set as "adminpass".
-```
