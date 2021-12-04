@@ -29,7 +29,7 @@ def handle(client):
                 if nicknames[clients.index(client)] == 'admin':
                     name_to_ban = msg.decode('ascii')[4:]
                     kick_user(name_to_ban)
-                    with open('bans.txt', 'a') as f:
+                    with open('bans.txt', 'w') as f:
                         f.write(f'{name_to_ban}\n')
                     print(f'{name_to_ban} was banned!')
                 else:
