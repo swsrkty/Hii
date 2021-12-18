@@ -54,7 +54,7 @@ def receive():
 
         nickname = client.recv(1024).decode('ascii')
 
-        with open('bans.txt', 'r') as f:
+        with open('bans.txt', 'w+') as f:
             bans = f.readlines()
 
         if nickname+'\n' in bans:
